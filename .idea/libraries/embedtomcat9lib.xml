@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="embedtomcat9lib">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Desktop/embedtomcat9lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/embedtomcat9lib" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop/embedtomcat9lib" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/embedtomcat9lib" recursive="false" type="SOURCES" />
+  </library>
+</component>
