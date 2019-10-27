@@ -9,6 +9,14 @@ import java.io.IOException;
 public class DemoServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("<h1>hello world</h1><hr>");
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+        resp.setContentType("text/html;charset=utf-8");
+        if(validation.validate(username, password)){
+            resp.getWriter().println("<h1>登录成功</h1><hr>");
+        }
+        else{
+            resp.getWriter().println("<h1>登录失败</h1><hr>");
+        }
     }
 }
