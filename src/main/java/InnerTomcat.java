@@ -2,7 +2,6 @@ import org.apache.catalina.*;
 import org.apache.catalina.connector.Connector;
 import org.apache.catalina.core.StandardContext;
 import org.apache.catalina.startup.Tomcat;
-
 import java.io.File;
 
 public class InnerTomcat {
@@ -40,7 +39,7 @@ public class InnerTomcat {
         tomcat.getServer().await();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         new InnerTomcat().startTomcat();
     }
 }
