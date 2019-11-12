@@ -1,14 +1,21 @@
 package Bean;
 
-public class User {
-    String username;
-    int balance;
+public class User{
+    private String username;
+    private String password;
 
-    public User(String username, int balance) {
-        this.username = username;
-        this.balance = balance;
+    public String getPassword() {
+        return password;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
     public String getUsername() {
         return username;
     }
@@ -17,16 +24,20 @@ public class User {
         this.username = username;
     }
 
-    public int getBalance() {
-        return balance;
-    }
-
-    public void setBalance(int balance) {
-        this.balance = balance;
+    @Override
+    public String toString() {
+        return username + ", " + password;
     }
 
     @Override
-    public String toString() {
-        return username + ", " + balance;
+    public boolean equals(Object obj) {
+        if(obj instanceof User){
+            if(((User) obj).getUsername().equals(this.username)){
+                if(((User) obj).password.equals(this.password)){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

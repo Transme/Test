@@ -13,7 +13,7 @@
 <body>
 <h1 align="center">登录</h1>
 <hr>
-<form action="DemoServlet" method="post">
+<form action="LogIn" method="post">
     <table align="center">
         <tr>
             <td><b>用户名：</b></td>

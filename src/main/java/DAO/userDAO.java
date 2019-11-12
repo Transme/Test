@@ -43,7 +43,7 @@ public class userDAO {
         try(Connection conn = getConnection();PreparedStatement pstm = conn.prepareStatement(sql)){
             ResultSet rs = pstm.executeQuery();
             while(rs.next()){
-                User user = new User(rs.getString(2), rs.getInt(4));
+                User user = new User(rs.getString(2), rs.getString(3));
                 users.add(user);
             }
             return users;
